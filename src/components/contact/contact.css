@@ -1,0 +1,65 @@
+.row {
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.contact-left {
+  flex-basis: 35%;
+  margin-left: 10%;
+}
+.contact-right {
+  flex-basis: 60%;
+}
+.contact-left h1 {
+  margin-top: 2rem;
+}
+.contact-left h1 span {
+  color: yellow;
+}
+.contact-left p {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+.contact-left span {
+  margin-left: 1rem;
+}
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  margin-top: 1rem;
+}
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+.linkedIn {
+  margin-left: 1rem;
+}
+.contact-right form {
+  width: 100%;
+}
+.contactForm {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  max-width: 60rem;
+}
+.name,
+.email,
+.msg {
+  font-size: medium;
+  width: 100%;
+  max-width: 40rem;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgb(40, 40, 40);
+}

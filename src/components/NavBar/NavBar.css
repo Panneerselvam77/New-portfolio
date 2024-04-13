@@ -1,0 +1,121 @@
+:root {
+  --primary-color: #2196f3; /* blue */
+  --secondary-color: #ffc107; /* yellow */
+}
+body {
+  display: inline;
+  justify-content: center;
+}
+
+.navbar {
+  background: var(--primary-color);
+  height: 5rem;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  left: 0;
+  right: 0;
+}
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: yellow;
+  padding: 50px;
+  font-size: 20px;
+}
+.navContainer {
+  width: 70vw;
+  margin: 0 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.desktopMenuListItem,
+.desktopMenuButton {
+  margin: 0 1rem;
+}
+
+.desktopMenuListItem:hover,
+.active {
+  color: var(--secondary-color);
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+.desktopMenuListItem {
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  padding-bottom: 0.5rem;
+}
+
+.desktopMenuButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  border-radius: 2rem;
+  background: var(--secondary-color);
+  color: white;
+}
+
+.desktopMenuImg {
+  object-fit: cover;
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+.mobMenu {
+  display: none;
+}
+
+.navMenu {
+  display: none;
+}
+
+@media screen and (max-width: 720px) {
+  .mobMenu {
+    display: flex;
+    object-fit: cover;
+    height: 1.8rem;
+  }
+
+  .desktopMenu {
+    display: none;
+  }
+
+  .navMenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    background: var(--primary-color);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    min-width: 15rem;
+    z-index: 2;
+  }
+
+  .listItem {
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    background: var(--primary-color);
+  }
+
+  .listItem:hover,
+  .active {
+    background: var(--secondary-color);
+    color: black;
+  }
+}

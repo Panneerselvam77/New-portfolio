@@ -1,0 +1,86 @@
+#intro {
+  height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.bg {
+  position: absolute;
+  top: -4rem;
+  right: 0;
+  z-index: -1;
+  object-fit: cover;
+  height: 100vh;
+}
+
+.introContent {
+  height: 80vh;
+  width: 100%;
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .introContent {
+    font-size: 2rem;
+  }
+}
+
+.hello {
+  font-size: 1.75rem;
+  font-weight: 100;
+}
+
+.introName {
+  color: red;
+}
+
+.introPara {
+  font-size: medium;
+  font-weight: 100;
+  text-align: justify;
+  text-justify: inter-word;
+  width: 40%;
+}
+.nameINtro {
+  font-weight: 100;
+  text-align: justify;
+  text-justify: inter-word;
+  width: 40%;
+}
+
+.btn {
+  background: white;
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+}
+
+.btnImg {
+  object-fit: cover;
+  margin: 0 0.25rem;
+  height: 1rem;
+  /* background-color: black; */
+}
+@media screen and (max-width: 768px) {
+  .bg {
+    right: -10vw;
+  }
+
+  .hello {
+    font-size: 4.5vw;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .animation-container {
+    width: 0px;
+    height: 0px;
+  }
+}
