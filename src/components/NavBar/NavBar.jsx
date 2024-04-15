@@ -13,7 +13,7 @@ export default function NavBar() {
     <div>
       <nav className="navbar sticky">
         <div className="navContainer">
-          <h4>{name}</h4>
+          <h4 style={{ color: "white", fontSize: 25 }}>{name}</h4>
           <div className="desktopMenu">
             <Link
               activeClass="active"
